@@ -1,0 +1,258 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../Fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url(../Fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Roboto-light-italic";
+  src: url(../Fonts/Roboto-LightItalic.ttf);
+}
+
+/* Default Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+/* Header and Footer */
+
+header,
+footer,
+.landing {
+  max-width: 100vw;
+  background-color: #1f2937;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header {
+  /* width: 100vw;
+  height: 10vh; */
+  justify-content: space-between;
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+}
+
+footer {
+  justify-content: center;
+  color: #f9faf8;
+}
+
+.title {
+  color: #f9faf8;
+  font-size: 24px;
+}
+
+/* Nav-bar */
+
+nav {
+  width: 40%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 100%;
+}
+
+.nav-item,
+.land-content-subtext {
+  position: relative;
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background-color: #e5e7eb;
+  transition: all 0.3s linear;
+}
+
+.nav-item:hover::after {
+  left: 0%;
+  width: 100%;
+}
+
+/* Landing Section */
+
+.landing {
+  justify-content: space-between;
+  /* margin-top: 10vh; */
+}
+
+.landing-content {
+  width: 48%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.landing-img {
+  height: 35vh;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #6d747d;
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+.land-content-main {
+  color: #f9faf8;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.land-content-btn {
+  width: 120px;
+  padding: 5px;
+  background-color: #3882f6;
+  border: 2px #3882f6 solid;
+  border-radius: 10px;
+  color: #f9faf8;
+  transition: all 0.3s linear;
+}
+
+.land-content-btn:hover {
+  background-color: #1f2937;
+}
+
+/* Info section */
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.info-head {
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.info-blocks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1%;
+  gap: 10px;
+}
+
+.block-img {
+  border: 2px solid #3882f6;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.block-subtext {
+  text-align: center;
+}
+
+/* Quote Section */
+
+.quote {
+  max-width: 100vw;
+  height: 40vh;
+  background-color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.quote-content {
+  color: #1f2937;
+  font-size: 36px;
+  font-family: "Roboto-light-italic";
+}
+
+.quote-person {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Sign up */
+
+.sign-up {
+  max-width: 100vw;
+  background-color: #3882f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+}
+
+.sign-up-content-main {
+  color: #f9faf8;
+  font-size: 24px;
+}
+
+.sign-up-content-subtext {
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+.sign-up-btn {
+  width: 120px;
+  padding: 5px;
+  background-color: #3882f6;
+  border: 2px solid #f9faf8;
+  border-radius: 10px;
+  color: #f9faf8;
+  transition: all 0.3s linear;
+}
+
+.sign-up-btn:hover {
+  color: #3882f6;
+  background-color: #f9faf8;
+}
